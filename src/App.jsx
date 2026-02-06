@@ -1,20 +1,20 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import Home from './pages/Home.jsx'
-import Services from './pages/Services.jsx'
-import Contact from './pages/Contact.jsx'
+import { Routes, Route } from "react-router-dom"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Home from "./pages/Home"
+import Services from "./pages/Services"
+import Contact from "./pages/Contact"
 
 export default function App() {
   return (
-    <HashRouter>
-      <Navbar />
+    <>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </>
   )
 }
