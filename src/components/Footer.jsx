@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      © {new Date().getFullYear()} IRA Tech Consulting
+      © {new Date().getFullYear()} IRA Technologies
     </footer>
   )
 }
